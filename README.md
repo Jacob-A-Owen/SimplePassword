@@ -1,101 +1,72 @@
 # SimplePassword
 
-##Screenshot
+## Screenshot
+
 ![SimplePassword Screenshot](screenshot.png)
 
-SimplePassword is a command-line password manager built in Python. It allows users to create accounts, securely store login credentials, generate strong passwords, search saved entries, and protect sensitive data using encryption.
+SimplePassword is a command-line password manager built in Python. The application allows users to create accounts, authenticate with a master password, securely store login credentials, generate strong passwords, search saved entries, and manage encrypted password records.
 
+## Features
 
+- User account creation and login
+- Master password authentication
+- SHA-256 password hashing
+- Fernet encryption for stored credentials
+- Add, view, search, and remove saved passwords
+- Random password generation
+- Persistent storage using JSON files
+- Fuzzy search functionality using Difflib
 
-\## Features
+## Technologies Used
 
+- Python
+- Cryptography (Fernet)
+- Hashlib (SHA-256)
+- JSON
+- Difflib
+- File I/O
 
+## What I Learned
 
-\- User account creation
+This project helped me gain experience with:
 
-\- Master password authentication
+- User authentication and access control
+- Password hashing and verification
+- Symmetric encryption using Fernet
+- Secure credential storage practices
+- JSON-based data persistence
+- Python file handling and data management
+- Building menu-driven command-line applications
 
-\- SHA-256 password hashing
+## How To Run
 
-\- Fernet encryption for stored credentials
+Install the required package:
 
-\- Add, view, search, and remove passwords
-
-\- Random password generation
-
-\- Persistent storage using JSON files
-
-
-
-\## Technologies Used
-
-
-
-\- Python
-
-\- Cryptography (Fernet)
-
-\- JSON
-
-\- Hashlib
-
-\- Difflib
-
-\- File I/O
-
-
-
-\## What I Learned
-
-
-
-This project strengthened my understanding of:
-
-
-
-\- User authentication and access control
-
-\- Password hashing and encryption
-
-\- Secure credential storage
-
-\- JSON data persistence
-
-\- Python file handling
-
-\- Building command-line applications
-
-
-
-\## How To Run
-
-
-
-Install dependencies:
-
-
-
+```bash
 pip install cryptography
-
-
+```
 
 Run the application:
 
+```bash
+python SimplePassword.py
+```
 
+## Project Structure
 
-python simple\_password-1.py
+```text
+SimplePassword.py
+README.md
+.gitignore
+```
 
+User data and encryption keys are generated locally when accounts are created and are excluded from GitHub using the .gitignore file.
 
+## Future Improvements
 
-\## Future Improvements
-
-
-
-\- Export passwords to encrypted backup files
-
-\- Password expiration reminders
-
-\- GUI version using Tkinter
-
-\- Multi-factor authentication support
-
+- Export encrypted password backups
+- Password strength analytics
+- GUI version using Tkinter
+- Multi-factor authentication
+- Password breach checking API integration
+- Cloud synchronization support
