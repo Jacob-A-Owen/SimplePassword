@@ -1,6 +1,7 @@
-\# SimplePassword
+# SimplePassword
 
-
+##Screenshot
+![SimplePassword Screenshot](screenshot.png)
 
 SimplePassword is a command-line password manager built in Python. It allows users to create accounts, securely store login credentials, generate strong passwords, search saved entries, and protect sensitive data using encryption.
 
